@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 210.0, 355.0, 822.0, 480.0 ],
+		"rect" : [ 577.0, 885.0, 822.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -45,7 +45,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 600.0, 350.5, 152.0, 45.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Each event is given a time, easing function from the ease library, and a delay time"
 				}
 
@@ -58,7 +57,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 600.0, 299.5, 152.0, 45.0 ],
-					"presentation_linecount" : 3,
 					"text" : "a callback we come out of the third outlet.  This can be anything"
 				}
 
@@ -71,7 +69,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 600.0, 207.5, 152.0, 45.0 ],
-					"presentation_linecount" : 3,
 					"text" : "An array of triggerd params will output from the second outlet at a given threshold"
 				}
 
@@ -83,7 +80,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 601.0, 126.0, 150.0, 32.0 ],
+					"patching_rect" : [ 601.0, 126.0, 152.0, 32.0 ],
 					"text" : "An array of params sets values for dictParams"
 				}
 
@@ -179,17 +176,23 @@
 , 			{
 				"box" : 				{
 					"data" : 					{
-						"params" : [ 							{
+						"params" : 						{
+							"1" : 							{
 								"param" : "help/1",
 								"value" : 2
 							}
- ],
+
+						}
+,
 						"triggered" : 						{
-							"params" : [ 								{
+							"params" : 							{
+								"1" : 								{
 									"param" : "help/1",
 									"value" : 0
 								}
- ],
+
+							}
+,
 							"thresh" : 1
 						}
 ,
@@ -383,7 +386,13 @@
 		"styles" : [ 			{
 				"name" : "Minimal",
 				"default" : 				{
-					"fontsize" : [ 10.0 ],
+					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"fontname" : [ "Futura Medium" ],
+					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontface" : [ 0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -394,16 +403,10 @@
 						"autogradient" : 0.0
 					}
 ,
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
-					"fontname" : [ "Futura Medium" ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontface" : [ 0 ],
-					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
 					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : [ 10.0 ],
+					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

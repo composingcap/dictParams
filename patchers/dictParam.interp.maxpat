@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 78.0, 668.0, 1083.0, 801.0 ],
+		"rect" : [ 811.0, 711.0, 1083.0, 801.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -56,7 +56,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 207.0, 112.0, 77.0, 21.0 ],
+					"patching_rect" : [ 207.0, 112.0, 89.0, 21.0 ],
 					"text" : "r #0_dictName"
 				}
 
@@ -67,7 +67,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 349.0, 207.0, 78.0, 21.0 ],
+					"patching_rect" : [ 349.0, 207.0, 90.0, 21.0 ],
 					"text" : "s #0_dictName"
 				}
 
@@ -91,8 +91,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 349.0, 105.0, 118.0, 21.0 ],
-					"text" : "patcherargs @voices 20"
+					"patching_rect" : [ 349.0, 105.0, 112.0, 21.0 ],
+					"text" : "patcherargs @voices 4"
 				}
 
 			}
@@ -100,7 +100,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-11",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -113,7 +113,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-10",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -126,7 +126,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-9",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -139,7 +139,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-8",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -179,8 +179,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 77.0, 216.0, 199.0, 21.0 ],
-					"text" : "poly~ poly.dictParam.interp 20 @target 0"
+					"patching_rect" : [ 77.0, 216.0, 249.0, 21.0 ],
+					"text" : "poly~ poly.dictParam.interp 4 @target 0 @parallel 0"
 				}
 
 			}
@@ -270,30 +270,16 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "poly.dictParam.interp.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/dictParams/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "dictParam.nameFixer.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/dictParams/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ease.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Minimal",
 				"default" : 				{
-					"fontsize" : [ 10.0 ],
+					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"fontname" : [ "Futura Medium" ],
+					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontface" : [ 0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -304,16 +290,10 @@
 						"autogradient" : 0.0
 					}
 ,
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
-					"fontname" : [ "Futura Medium" ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontface" : [ 0 ],
-					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
 					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : [ 10.0 ],
+					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
