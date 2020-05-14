@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -110,7 +110,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -466,7 +466,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 2,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -569,12 +569,11 @@
 										"styles" : [ 											{
 												"name" : "Minimal",
 												"default" : 												{
-													"elementcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-													"fontsize" : [ 10.0 ],
-													"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 													"fontname" : [ "Futura Medium" ],
+													"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"fontface" : [ 0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -585,9 +584,10 @@
 														"autogradient" : 0.0
 													}
 ,
-													"fontface" : [ 0 ],
+													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 													"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"fontsize" : [ 10.0 ],
+													"elementcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -846,12 +846,11 @@
 						"styles" : [ 							{
 								"name" : "Minimal",
 								"default" : 								{
-									"elementcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-									"fontsize" : [ 10.0 ],
-									"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 									"fontname" : [ "Futura Medium" ],
+									"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"fontface" : [ 0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -862,9 +861,10 @@
 										"autogradient" : 0.0
 									}
 ,
-									"fontface" : [ 0 ],
+									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"fontsize" : [ 10.0 ],
+									"elementcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -894,11 +894,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-50",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 560.0, 179.0, 167.0, 71.0 ],
+					"patching_rect" : [ 560.0, 179.0, 170.0, 58.0 ],
 					"text" : "triggered params are set at a point in the ramp.  All triggered params are on one trigger.  Triggering will not stop parameters from ramping."
 				}
 
@@ -970,7 +970,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2687,13 +2687,13 @@
 						"styles" : [ 							{
 								"name" : "Minimal",
 								"default" : 								{
-									"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
-									"fontsize" : [ 10.0 ],
+									"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-									"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 									"fontname" : [ "Futura Medium" ],
+									"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"fontface" : [ 0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -2704,10 +2704,10 @@
 										"autogradient" : 0.0
 									}
 ,
-									"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
-									"fontface" : [ 0 ],
+									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"fontsize" : [ 10.0 ],
+									"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2763,7 +2763,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 297.0, 729.0, 50.0, 60.0 ],
-					"text" : "test.1 0.658 test.2 0.342"
+					"text" : "test.1 0.431 test.2 0.569"
 				}
 
 			}
@@ -2890,13 +2890,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-58",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 4.0, 773.0, 50.0, 34.0 ],
-					"text" : "4.010884"
+					"patching_rect" : [ 4.0, 773.0, 50.0, 21.0 ],
+					"text" : "5.569"
 				}
 
 			}
@@ -3270,53 +3269,68 @@
 				"box" : 				{
 					"data" : 					{
 						"cue1" : 						{
-							"params" : [ 								{
+							"params" : 							{
+								"1" : 								{
 									"param" : "test.1",
 									"value" : 10
 								}
-, 								{
+,
+								"2" : 								{
 									"param" : "test.2",
 									"value" : 0
 								}
- ],
+
+							}
+,
 							"time" : 5000,
 							"function" : 0,
 							"delay" : 0,
 							"preset" : 							{
-								"params" : [ 									{
+								"params" : 								{
+									"1" : 									{
 										"param" : "test.1",
 										"value" : 70
 									}
-, 									{
+,
+									"2" : 									{
 										"param" : "test.2",
 										"value" : 50
 									}
- ]
+
+								}
+
 							}
 
 						}
 ,
 						"cue3" : 						{
-							"params" : [ 								{
+							"params" : 							{
+								"1" : 								{
 									"param" : "foo.5",
 									"value" : [ 900, 100, 0 ]
 								}
- ],
+
+							}
+,
 							"time" : 10000,
 							"function" : 0,
 							"delay" : 0
 						}
 ,
 						"cue2" : 						{
-							"params" : [ 								{
+							"params" : 							{
+								"1" : 								{
 									"param" : "test.1",
 									"value" : 200
 								}
-, 								{
+,
+								"2" : 								{
 									"param" : "test.2",
 									"value" : 400
 								}
- ],
+
+							}
+,
 							"triggered" : 							{
 								"thresh" : 0.5,
 								"params" : [ 									{
@@ -3777,35 +3791,42 @@
 		"dependency_cache" : [ 			{
 				"name" : "dictParam.maxpat",
 				"bootpath" : "~/Google Drive/Code/Max/Patches/dictParams",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "../../../../../../Google Drive/Code/Max/Patches/dictParams",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "dictParam.nameFixer.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/dictParams/patchers",
+				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "poly.dictParam.interp.maxpat",
 				"bootpath" : "~/Google Drive/Code/Max/Patches/dictParams",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "../../../../../../Google Drive/Code/Max/Patches/dictParams",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dictParam.forward.maxpat",
 				"bootpath" : "~/Google Drive/Code/Max/Patches/dictParams",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "../../../../../../Google Drive/Code/Max/Patches/dictParams",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dictParam.mix.maxpat",
 				"bootpath" : "~/Google Drive/Code/Max/Patches/dictParams",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "../../../../../../Google Drive/Code/Max/Patches/dictParams",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dictParam.scale.maxpat",
 				"bootpath" : "~/Google Drive/Code/Max/Patches/dictParams",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "../../../../../../Google Drive/Code/Max/Patches/dictParams",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3818,13 +3839,13 @@
 		"styles" : [ 			{
 				"name" : "Minimal",
 				"default" : 				{
-					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
-					"fontsize" : [ 10.0 ],
+					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
 					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 					"fontname" : [ "Futura Medium" ],
+					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontface" : [ 0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -3835,10 +3856,10 @@
 						"autogradient" : 0.0
 					}
 ,
-					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
-					"fontface" : [ 0 ],
+					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"fontsize" : [ 10.0 ],
+					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
