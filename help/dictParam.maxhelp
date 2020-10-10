@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 278.0, 365.0, 630.0, 579.0 ],
+		"rect" : [ 211.0, 399.0, 630.0, 579.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "Minimal",
 		"subpatcher_template" : "minimal",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"format" : 6,
@@ -69,7 +70,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 383.0, 150.0, 19.0 ],
+					"patching_rect" : [ 13.0, 383.0, 167.0, 19.0 ],
 					"text" : "These are the same parameter "
 				}
 
@@ -81,7 +82,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 13.0, 472.0, 142.0, 21.0 ],
+					"patching_rect" : [ 12.0, 473.0, 156.0, 21.0 ],
 					"text" : "dictParam helpParams help/1"
 				}
 
@@ -93,7 +94,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 13.0, 411.0, 140.0, 21.0 ],
+					"patching_rect" : [ 13.0, 411.0, 155.0, 21.0 ],
 					"text" : "dictParam helpParams help.1"
 				}
 
@@ -105,7 +106,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 379.0, 345.0, 151.0, 71.0 ],
+					"patching_rect" : [ 379.0, 345.0, 161.0, 67.0 ],
 					"text" : "This has all dictParams linked to the \"helpParams\" dictionary output their current value.  This can be useful in frame based systems"
 				}
 
@@ -128,7 +129,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 344.0, 420.0, 102.0, 21.0 ],
+					"patching_rect" : [ 344.0, 420.0, 114.0, 21.0 ],
 					"text" : "s helpParams.refresh"
 				}
 
@@ -140,7 +141,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 385.0, 254.5, 150.0, 58.0 ],
+					"patching_rect" : [ 385.0, 254.5, 162.0, 55.0 ],
 					"text" : "Sending a bang to this namespace resets dict params in the \"helpParams\" dictionary to return to their default value"
 				}
 
@@ -163,7 +164,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 344.0, 319.5, 93.0, 21.0 ],
+					"patching_rect" : [ 344.0, 319.5, 104.0, 21.0 ],
 					"text" : "s helpParams.reset"
 				}
 
@@ -197,7 +198,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.0, 54.0, 467.0, 32.0 ],
+					"patching_rect" : [ 20.0, 54.0, 494.0, 31.0 ],
 					"text" : "dictParams route and store named data throught max by writing to a dictionary of parameters.  Parameters can be easily recalled and modified on the fly using various dictParam abstractions."
 				}
 
@@ -248,7 +249,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 106.0, 281.0, 67.0, 21.0 ],
-					"text" : "set 0.452"
+					"text" : "set 5"
 				}
 
 			}
@@ -272,7 +273,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 20.0, 245.0, 153.0, 21.0 ],
+					"patching_rect" : [ 20.0, 245.0, 160.0, 21.0 ],
 					"text" : "dictParam helpParams help::1"
 				}
 
@@ -284,7 +285,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.0, 8.0, 467.0, 38.0 ],
+					"patching_rect" : [ 20.0, 8.0, 467.0, 36.0 ],
 					"text" : "dictParam"
 				}
 
@@ -296,7 +297,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 224.0, 101.5, 52.0, 21.0 ],
+					"patching_rect" : [ 224.0, 101.5, 54.0, 21.0 ],
 					"text" : "loadbang"
 				}
 
@@ -318,7 +319,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 224.0, 141.5, 80.0, 21.0 ],
+					"patching_rect" : [ 224.0, 141.5, 88.0, 21.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
@@ -336,7 +337,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 20.0, 157.0, 153.0, 21.0 ],
+					"patching_rect" : [ 20.0, 157.0, 170.0, 21.0 ],
 					"text" : "dictParam helpParams help::1 5"
 				}
 
@@ -422,14 +423,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "dictParam.maxpat",
-				"bootpath" : "~/Google Drive/Code/Max/Patches/dictParams",
-				"patcherrelativepath" : "../../../../../Google Drive/Code/Max/Patches/dictParams",
+				"bootpath" : "D:/Documents/Max 8/Packages/dictParams/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dictParam.nameFixer.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/dictParams/patchers",
+				"bootpath" : "D:/Documents/Max 8/Packages/dictParams/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -439,7 +440,6 @@
 		"styles" : [ 			{
 				"name" : "Minimal",
 				"default" : 				{
-					"fontsize" : [ 10.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -450,16 +450,17 @@
 						"autogradient" : 0.0
 					}
 ,
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
-					"fontname" : [ "Futura Medium" ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontface" : [ 0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+					"fontsize" : [ 10.0 ],
 					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
-					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontname" : [ "Futura Medium" ],
+					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 ,
 				"parentstyle" : "",
