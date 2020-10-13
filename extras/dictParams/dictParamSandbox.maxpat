@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 144.0, 624.0, 1270.0, 806.0 ],
+		"rect" : [ 596.0, 400.0, 1270.0, 806.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "Minimal",
 		"subpatcher_template" : "minimal",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-59",
@@ -56,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 640.0, 576.0, 152.0, 21.0 ],
+					"patching_rect" : [ 640.0, 576.0, 166.0, 21.0 ],
 					"text" : "dictParam params foo.5_scaled"
 				}
 
@@ -81,7 +82,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 549.0, 499.0, 264.0, 21.0 ],
+					"patching_rect" : [ 549.0, 499.0, 293.0, 21.0 ],
 					"text" : "dictParam.scale params foo.5 foo.5_scaled 0. 1. -2. -10."
 				}
 
@@ -94,7 +95,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 58.5, 34.0, 527.0, 23.0 ],
+					"patching_rect" : [ 58.5, 34.0, 527.0, 22.0 ],
 					"text" : "Requires the ease package from the package manager for lerping functions"
 				}
 
@@ -110,7 +111,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -143,6 +144,7 @@
 						"tags" : "",
 						"style" : "Minimal",
 						"subpatcher_template" : "minimal",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-3",
@@ -466,7 +468,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -499,6 +501,7 @@
 										"tags" : "",
 										"style" : "Minimal",
 										"subpatcher_template" : "minimal",
+										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-7",
@@ -569,11 +572,15 @@
 										"styles" : [ 											{
 												"name" : "Minimal",
 												"default" : 												{
-													"fontname" : [ "Futura Medium" ],
-													"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"fontsize" : [ 10.0 ],
 													"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"elementcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+													"fontname" : [ "Futura Medium" ],
 													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"fontface" : [ 0 ],
+													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -583,11 +590,7 @@
 														"proportion" : 0.39,
 														"autogradient" : 0.0
 													}
-,
-													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-													"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"fontsize" : [ 10.0 ],
-													"elementcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -846,11 +849,15 @@
 						"styles" : [ 							{
 								"name" : "Minimal",
 								"default" : 								{
-									"fontname" : [ "Futura Medium" ],
-									"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"fontsize" : [ 10.0 ],
 									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"elementcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+									"fontname" : [ "Futura Medium" ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"fontface" : [ 0 ],
+									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -860,11 +867,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0.0
 									}
-,
-									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"fontsize" : [ 10.0 ],
-									"elementcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -898,7 +901,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 560.0, 179.0, 170.0, 58.0 ],
+					"patching_rect" : [ 560.0, 179.0, 186.0, 55.0 ],
 					"text" : "triggered params are set at a point in the ramp.  All triggered params are on one trigger.  Triggering will not stop parameters from ramping."
 				}
 
@@ -910,7 +913,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 560.0, 139.5, 164.0, 32.0 ],
+					"patching_rect" : [ 560.0, 139.5, 164.0, 31.0 ],
 					"text" : "preset is called before querying current param values"
 				}
 
@@ -922,7 +925,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 560.0, 76.0, 152.0, 58.0 ],
+					"patching_rect" : [ 560.0, 76.0, 152.0, 55.0 ],
 					"text" : "Lerps to a list of params defined in a dictionary from their current value to a new value"
 				}
 
@@ -943,8 +946,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 182.0, 389.0, 100.0, 21.0 ],
-					"text" : "print"
+					"patching_rect" : [ 205.0, 397.0, 81.0, 21.0 ],
+					"text" : "print triggered"
 				}
 
 			}
@@ -970,7 +973,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1003,6 +1006,7 @@
 						"tags" : "",
 						"style" : "Minimal",
 						"subpatcher_template" : "minimal",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-326",
@@ -2687,13 +2691,17 @@
 						"styles" : [ 							{
 								"name" : "Minimal",
 								"default" : 								{
-									"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
-									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-									"fontname" : [ "Futura Medium" ],
-									"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"fontsize" : [ 10.0 ],
 									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+									"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+									"fontname" : [ "Futura Medium" ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"fontface" : [ 0 ],
+									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -2703,11 +2711,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0.0
 									}
-,
-									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"fontsize" : [ 10.0 ],
-									"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -2749,7 +2753,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 368.5, 261.0, 152.0, 58.0 ],
+					"patching_rect" : [ 368.5, 261.0, 152.0, 55.0 ],
 					"text" : "Must have a dictName argument! It will not be able to look up current values otherwise"
 				}
 
@@ -2762,20 +2766,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 297.0, 729.0, 50.0, 60.0 ],
+					"patching_rect" : [ 297.0, 729.0, 50.0, 57.0 ],
 					"text" : "test.1 0.431 test.2 0.569"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-78",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 263.5, 397.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -2786,7 +2778,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 73.75, 493.0, 166.0, 32.0 ],
+					"patching_rect" : [ 73.75, 493.0, 166.0, 31.0 ],
 					"text" : "Can mix between any number of single dimention parameters"
 				}
 
@@ -3077,7 +3069,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1001.0, 671.0, 151.0, 32.0 ],
+					"patching_rect" : [ 1001.0, 671.0, 151.0, 31.0 ],
 					"text" : "This will overrwrite children of test!",
 					"textcolor" : [ 0.996078431372549, 0.0, 0.0, 1.0 ]
 				}
@@ -3333,11 +3325,14 @@
 ,
 							"triggered" : 							{
 								"thresh" : 0.5,
-								"params" : [ 									{
+								"params" : 								{
+									"1" : 									{
 										"param" : "foo.bar",
 										"value" : 200
 									}
- ]
+
+								}
+
 							}
 ,
 							"time" : 10000,
@@ -3465,7 +3460,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-123", 1 ]
 				}
 
@@ -3483,7 +3478,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-123", 1 ]
 				}
 
@@ -3501,14 +3496,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
 					"source" : [ "obj-123", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-78", 0 ],
-					"order" : 0,
-					"source" : [ "obj-123", 1 ]
 				}
 
 			}
@@ -3790,62 +3777,66 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "dictParam.maxpat",
-				"bootpath" : "~/Google Drive/Code/Max/Patches/dictParams",
-				"patcherrelativepath" : "../../../../../../Google Drive/Code/Max/Patches/dictParams",
+				"bootpath" : "D:/Documents/Max 8/Packages/dictParams/patchers",
+				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dictParam.nameFixer.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/dictParams/patchers",
+				"bootpath" : "D:/Documents/Max 8/Packages/dictParams/patchers",
 				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "poly.dictParam.interp.maxpat",
-				"bootpath" : "~/Google Drive/Code/Max/Patches/dictParams",
-				"patcherrelativepath" : "../../../../../../Google Drive/Code/Max/Patches/dictParams",
+				"bootpath" : "D:/Documents/Max 8/Packages/dictParams/patchers",
+				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dictParam.forward.maxpat",
-				"bootpath" : "~/Google Drive/Code/Max/Patches/dictParams",
-				"patcherrelativepath" : "../../../../../../Google Drive/Code/Max/Patches/dictParams",
+				"bootpath" : "D:/Documents/Max 8/Packages/dictParams/patchers",
+				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dictParam.mix.maxpat",
-				"bootpath" : "~/Google Drive/Code/Max/Patches/dictParams",
-				"patcherrelativepath" : "../../../../../../Google Drive/Code/Max/Patches/dictParams",
+				"bootpath" : "D:/Documents/Max 8/Packages/dictParams/patchers",
+				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dictParam.scale.maxpat",
-				"bootpath" : "~/Google Drive/Code/Max/Patches/dictParams",
-				"patcherrelativepath" : "../../../../../../Google Drive/Code/Max/Patches/dictParams",
+				"bootpath" : "D:/Documents/Max 8/Packages/dictParams/patchers",
+				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ease.mxo",
-				"type" : "iLaX"
+				"name" : "ease.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Minimal",
 				"default" : 				{
-					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
-					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"fontname" : [ "Futura Medium" ],
-					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : [ 10.0 ],
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+					"fontname" : [ "Futura Medium" ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontface" : [ 0 ],
+					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -3855,11 +3846,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0.0
 					}
-,
-					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontsize" : [ 10.0 ],
-					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "",
