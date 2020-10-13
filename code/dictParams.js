@@ -11,7 +11,7 @@ function dump_address(dict, keyString){
 	for(var k = 0; k < keys.length; k++){
 		key = keys[k];
 		var type = dict.gettype(key);
-		post(type)
+
 		
 		if (type == "dictionary"){
 			dump_address(dict.get(key), keyString + key + "::");
