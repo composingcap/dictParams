@@ -11,6 +11,7 @@ function dump_address(dict, keyString){
 	for(var k = 0; k < keys.length; k++){
 		key = keys[k];
 		var type = dict.gettype(key);
+		post(type)
 		
 		if (type == "dictionary"){
 			dump_address(dict.get(key), keyString + key + "::");
@@ -18,7 +19,25 @@ function dump_address(dict, keyString){
 			}
 			
 		else{
-			outlet(0,[keyString + key, dict.get(key)])
+			outArray = []
+			outArray.push(keyString + key)
+			
+			if (type == "array"){
+				var ar = dict.get(key);
+				
+				for (var i = 0; i < ar.length; i++){
+					
+					outArray.push(ar[i]);
+					
+					}
+				
+				}
+				
+			else{
+				outArray.push(dict.get(key));				
+				}
+			
+			outlet(0,outArray)
 			}
 		
 		
