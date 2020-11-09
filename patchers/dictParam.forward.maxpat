@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,14 +37,27 @@
 		"tags" : "",
 		"style" : "Minimal",
 		"subpatcher_template" : "minimal",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 125.5, 189.0, 114.0, 21.0 ],
+					"text" : "dictParam.nameFixer"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 229.0, 214.0, 79.0, 21.0 ],
+					"patching_rect" : [ 277.0, 214.0, 88.0, 21.0 ],
 					"text" : "prepend setDict"
 				}
 
@@ -56,7 +69,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 229.0, 189.0, 40.0, 21.0 ],
+					"patching_rect" : [ 277.0, 189.0, 40.0, 21.0 ],
 					"text" : "unjoin"
 				}
 
@@ -68,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 50.0, 53.0, 85.0, 21.0 ],
+					"patching_rect" : [ 50.0, 53.0, 96.0, 21.0 ],
 					"text" : "routepass setDict"
 				}
 
@@ -80,7 +93,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 229.0, 129.0, 52.0, 21.0 ],
+					"patching_rect" : [ 277.0, 129.0, 54.0, 21.0 ],
 					"text" : "loadbang"
 				}
 
@@ -92,7 +105,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 229.0, 158.0, 63.0, 21.0 ],
+					"patching_rect" : [ 277.0, 158.0, 68.0, 21.0 ],
 					"text" : "patcherargs"
 				}
 
@@ -104,7 +117,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 115.0, 184.0, 62.0, 21.0 ],
+					"patching_rect" : [ 128.0, 223.0, 68.0, 21.0 ],
 					"text" : "prepend set"
 				}
 
@@ -128,7 +141,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 115.0, 153.0, 35.0, 21.0 ],
+					"patching_rect" : [ 115.0, 153.0, 37.0, 21.0 ],
 					"text" : "zl.reg"
 				}
 
@@ -140,7 +153,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 115.0, 88.0, 48.0, 21.0 ],
+					"patching_rect" : [ 115.0, 88.0, 52.0, 21.0 ],
 					"text" : "zl.slice 1"
 				}
 
@@ -152,7 +165,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 115.0, 241.0, 53.0, 21.0 ],
+					"patching_rect" : [ 115.0, 267.0, 58.0, 21.0 ],
 					"text" : "dictParam"
 				}
 
@@ -209,7 +222,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-122", 0 ],
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-121", 1 ]
 				}
 
@@ -225,6 +238,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-122", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -268,13 +288,10 @@
 		"styles" : [ 			{
 				"name" : "Minimal",
 				"default" : 				{
-					"fontsize" : [ 10.0 ],
-					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
-					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontname" : [ "Futura Medium" ],
-					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -285,10 +302,13 @@
 						"autogradient" : 0.0
 					}
 ,
-					"fontface" : [ 0 ],
+					"fontname" : [ "Futura Medium" ],
 					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontface" : [ 0 ],
+					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+					"fontsize" : [ 10.0 ]
 				}
 ,
 				"parentstyle" : "",

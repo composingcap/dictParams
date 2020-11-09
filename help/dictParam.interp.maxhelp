@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 577.0, 885.0, 822.0, 480.0 ],
+		"rect" : [ 1814.0, 463.0, 822.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -37,14 +37,27 @@
 		"tags" : "",
 		"style" : "Minimal",
 		"subpatcher_template" : "minimal",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 20.0, 262.0, 71.0, 21.0 ],
+					"text" : "route param"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-27",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 600.0, 350.5, 152.0, 45.0 ],
+					"patching_rect" : [ 600.0, 350.5, 158.0, 43.0 ],
 					"text" : "Each event is given a time, easing function from the ease library, and a delay time"
 				}
 
@@ -56,7 +69,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 600.0, 299.5, 152.0, 45.0 ],
+					"patching_rect" : [ 600.0, 299.5, 156.0, 43.0 ],
 					"text" : "a callback we come out of the third outlet.  This can be anything"
 				}
 
@@ -68,7 +81,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 600.0, 207.5, 152.0, 45.0 ],
+					"patching_rect" : [ 600.0, 207.5, 152.0, 43.0 ],
 					"text" : "An array of triggerd params will output from the second outlet at a given threshold"
 				}
 
@@ -80,7 +93,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 601.0, 126.0, 152.0, 32.0 ],
+					"patching_rect" : [ 601.0, 126.0, 152.0, 31.0 ],
 					"text" : "An array of params sets values for dictParams"
 				}
 
@@ -92,7 +105,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.0, 51.0, 308.0, 32.0 ],
+					"patching_rect" : [ 20.0, 51.0, 308.0, 31.0 ],
 					"text" : "Interpolated between a current value and a new value using a dictionary of commands"
 				}
 
@@ -104,19 +117,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.0, 7.0, 341.0, 38.0 ],
+					"patching_rect" : [ 20.0, 7.0, 341.0, 36.0 ],
 					"text" : "dictParam.interp"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 79.5, 289.0, 148.0, 21.0 ],
-					"text" : "dictParam.forward helpParams"
 				}
 
 			}
@@ -139,7 +141,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 367.0, 66.0, 52.0, 21.0 ],
+					"patching_rect" : [ 367.0, 66.0, 54.0, 21.0 ],
 					"text" : "loadbang"
 				}
 
@@ -151,7 +153,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 367.0, 96.0, 71.0, 21.0 ],
+					"patching_rect" : [ 367.0, 96.0, 80.0, 21.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
@@ -207,7 +209,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 20.0, 180.0, 123.0, 21.0 ],
+					"patching_rect" : [ 20.0, 180.0, 137.0, 21.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"parameter_enable" : 0,
@@ -227,7 +229,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 12.0, 303.0, 50.0, 21.0 ]
+					"patching_rect" : [ 18.0, 340.5, 50.0, 21.0 ]
 				}
 
 			}
@@ -237,7 +239,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.0, 262.0, 148.0, 21.0 ],
+					"patching_rect" : [ 20.0, 299.5, 162.0, 21.0 ],
 					"text" : "dictParam.forward helpParams"
 				}
 
@@ -249,7 +251,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 196.0, 341.0, 80.0, 21.0 ],
+					"patching_rect" : [ 202.0, 378.5, 88.0, 21.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
@@ -267,7 +269,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 12.0, 341.0, 152.0, 21.0 ],
+					"patching_rect" : [ 18.0, 378.5, 165.0, 21.0 ],
 					"text" : "dictParam helpParams help/1 1"
 				}
 
@@ -279,7 +281,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 20.0, 226.0, 138.0, 21.0 ],
+					"patching_rect" : [ 20.0, 226.0, 153.0, 21.0 ],
 					"text" : "dictParam.interp helpParams"
 				}
 
@@ -287,14 +289,14 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -329,6 +331,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-3", 2 ]
 				}
@@ -344,55 +353,52 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "dictParam.interp.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/dictParams/patchers",
+				"bootpath" : "D:/Documents/Max 8/Packages/dictParams/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "poly.dictParam.interp.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/dictParams/patchers",
+				"bootpath" : "D:/Documents/Max 8/Packages/dictParams/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dictParam.nameFixer.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/dictParams/patchers",
+				"bootpath" : "D:/Documents/Max 8/Packages/dictParams/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dictParam.maxpat",
-				"bootpath" : "~/Google Drive/Code/Max/Patches/dictParams",
-				"patcherrelativepath" : "../../../../../Google Drive/Code/Max/Patches/dictParams",
+				"bootpath" : "D:/Documents/Max 8/Packages/dictParams/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dictParam.forward.maxpat",
-				"bootpath" : "~/Google Drive/Code/Max/Patches/dictParams",
-				"patcherrelativepath" : "../../../../../Google Drive/Code/Max/Patches/dictParams",
+				"bootpath" : "D:/Documents/Max 8/Packages/dictParams/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ease.mxo",
-				"type" : "iLaX"
+				"name" : "ease.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Minimal",
 				"default" : 				{
-					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
-					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"fontname" : [ "Futura Medium" ],
-					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontface" : [ 0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -403,10 +409,13 @@
 						"autogradient" : 0.0
 					}
 ,
+					"fontname" : [ "Futura Medium" ],
 					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontsize" : [ 10.0 ],
-					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ]
+					"fontface" : [ 0 ],
+					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+					"fontsize" : [ 10.0 ]
 				}
 ,
 				"parentstyle" : "",
