@@ -35,6 +35,7 @@ socket.on("loadJSON", (data) => {
 
 socket.on("setName", (data) => {
   document.getElementById("dictName").innerHTML = data;
+  document.getElementById("titlebar").innerHTML = data;
 
 });
 
