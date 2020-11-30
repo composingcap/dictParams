@@ -1,11 +1,14 @@
+var findArray = [];
+
 function dump(dictName) {
   var d = new Dict(dictName);
-  dump_address(d, "");
+  crawl(d, "");
 
 }
 
 
-function dump_address(dict, keyString) {
+function crawl(dict, keyString, mode) {
+	if (mode == null) mode="dump";
   var keys = dict.getkeys();
   if (typeof keys === 'string') {
     keys = [keys];
@@ -16,7 +19,7 @@ function dump_address(dict, keyString) {
 
 
     if (type == "dictionary") {
-      dump_address(dict.get(key), keyString + key + "::");
+      crawl(dict.get(key), keyString + key + "::");
 
     } else {
       outArray = []
@@ -35,7 +38,14 @@ function dump_address(dict, keyString) {
         outArray.push(dict.get(key));
       }
 
+
+	if (mode="dump"){
+		outArray.unshift(mode)
       outlet(0, outArray)
+}
+	if (mode="find"){
+		findArray.push(outArray);
+		}
     }
 
 
@@ -44,6 +54,7 @@ function dump_address(dict, keyString) {
 
 
 }
+
 
 function dictJsonParse(dictName) {
   var d = new Dict(dictName);
@@ -57,3 +68,11 @@ function jsonDictParse(json, dictName) {
   var d = new Dict(dictName);
   d.parse(JSON.stringify(json));
 }
+
+
+function find(){
+	findArray = []
+	
+	
+	
+	}
