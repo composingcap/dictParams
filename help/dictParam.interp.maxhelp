@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 262.0, 177.0, 1111.0, 884.0 ],
+		"rect" : [ 100.0, 100.0, 1111.0, 884.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -71,7 +71,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 385.0, 122.0, 356.0, 440.0 ],
 					"rendermode" : 0,
-					"url" : "http://localhost:5394"
+					"url" : "http://localhost:6432"
 				}
 
 			}
@@ -132,6 +132,7 @@
 						"style" : "Minimal",
 						"subpatcher_template" : "minimal",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-4",
@@ -140,7 +141,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 68.0, 454.0, 530.0, 43.0 ],
-									"presentation_linecount" : 3,
 									"text" : "triggers must have a time. When given a float, triggers will fire on after a portion of progress has passed. If they are formated in a string like 1000ms, triggers will operate in absolute time. These times must occure during the duration of the event."
 								}
 
@@ -152,7 +152,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 68.0, 421.0, 530.0, 31.0 ],
+									"patching_rect" : [ 68.0, 421.0, 533.0, 31.0 ],
 									"text" : "You may have as many triggers as you like. Triggers should be a dictionaly of dictionaries similar to the params. "
 								}
 
@@ -197,7 +197,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 11.0, 183.0, 574.0, 19.0 ],
+									"patching_rect" : [ 11.0, 191.0, 574.0, 19.0 ],
 									"text" : "delay: A delay in ms before the interpolation"
 								}
 
@@ -205,11 +205,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-16",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 11.0, 158.0, 574.0, 19.0 ],
-									"text" : "function: not yet implemented"
+									"patching_rect" : [ 11.0, 158.0, 574.0, 31.0 ],
+									"text" : "function: runs the event on an easing function from https://github.com/AndrewRayCode/easing-utils.  May be set both globally and localy."
 								}
 
 							}
@@ -336,10 +337,9 @@
 						"styles" : [ 							{
 								"name" : "Minimal",
 								"default" : 								{
-									"fontsize" : [ 10.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"fontname" : [ "Futura Medium" ],
 									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-									"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -350,11 +350,12 @@
 										"autogradient" : 0.0
 									}
 ,
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"fontname" : [ "Futura Medium" ],
-									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"fontface" : [ 0 ],
-									"elementcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ]
+									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"elementcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+									"fontsize" : [ 10.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -423,7 +424,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 239.0, 470.0, 135.0, 43.0 ],
+					"patching_rect" : [ 239.0, 470.0, 136.0, 43.0 ],
 					"text" : "A callback will be triggered when an event is finished"
 				}
 
@@ -626,7 +627,8 @@
 ,
 						"callback" : "this is a callback",
 						"duration" : 20000,
-						"delay" : 500
+						"delay" : 500,
+						"function" : "easeInExpo"
 					}
 ,
 					"id" : "obj-12",
@@ -882,10 +884,9 @@
 				"name" : "Minimal",
 				"default" : 				{
 					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"fontsize" : [ 10.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontname" : [ "Futura Medium" ],
 					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -896,12 +897,13 @@
 						"autogradient" : 0.0
 					}
 ,
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontname" : [ "Futura Medium" ],
 					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontface" : [ 0 ],
-					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ]
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+					"fontsize" : [ 10.0 ]
 				}
 ,
 				"parentstyle" : "",

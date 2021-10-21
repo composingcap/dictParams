@@ -1,1 +1,5 @@
-{}
+{
+  "dependencies": {
+    "easing-utils": "^0.0.7"
+  }
+}

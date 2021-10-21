@@ -12,11 +12,15 @@ var removeDicts = []
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 
 
+var EasingFunctions = require('easing-utils');
+
+
 Max.addHandler("interp", (dname) => {
 
 	Max.getDict(dname).then((dataInterp) => {
 
 		interpDict = dataInterp;
+
 
 
 
@@ -107,10 +111,23 @@ function timerLoop() {
 			d.currentTime += deltaTime;
 			if (d.currentTime < d.delay) continue;
 
+			var p = d.currentTime / d.duration;
+				
+			p = clamp(p, 0, 1);
+			var e = p;
+			
+			if (interpDict.function != undefined && interpDict.function in EasingFunctions ){
+				e=EasingFunctions[interpDict.function](p);
+			}
+
 			for (var [key, value] of Object.entries(d.params)) {
-				var p = d.currentTime / d.duration;
-				p = clamp(p, 0, 1);
-				var thisVal = d.startVals[value.param] * (1 - p) + d.endVals[value.param] * p;
+
+				if (value.function != undefined && value.function in EasingFunctions ){
+					e=EasingFunctions[interpDict.function](p);
+				}
+
+
+				var thisVal = d.startVals[value.param] * (1 - e) + d.endVals[value.param] * e;
 				Max.outlet(["param", value.param, thisVal]);
 
 			}
