@@ -127,7 +127,7 @@ function timerLoop() {
 
 				}
 
-				if (d.currentTime >= absTime) {
+				if ((d.currentTime-d.delay) >= absTime) {
 					removeTriggers.push(key);
 					if (value.param != undefined && value != undefined) {
 						Max.outlet(["param", value.param, value.value]);
