@@ -34,6 +34,11 @@ max.addHandler("set", (arg1) => {
   loadDict(dictName);
 });
 
+
+max.addHandler("mode", (arg1) => {
+  io.emit("mode", arg1);  
+});
+
 function loadDict(dictName) {
   if (dictName != undefined) {
     max.getDict(dictName).then((data) => {

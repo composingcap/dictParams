@@ -14,6 +14,40 @@ const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 
 var EasingFunctions = require('easing-utils');
 
+var createNestedObject = function( base, names, value ) {
+
+	if (typeof value == "string") value = value.split(" ").map(Number);
+
+    // If a value is given, remove the last name and keep it for later:
+    var lastName = arguments.length === 3 ? names.pop() : false;
+
+    // Walk the hierarchy, creating new objects where needed.
+    // If the lastName was removed, then the last object is not set yet:
+    for( var i = 0; i < names.length; i++ ) {
+        base = base[ names[i] ] = base[ names[i] ] || {};
+    }
+
+    // If a value was given, set it to the last name:
+    if( lastName ) base = base[ lastName ] = value;
+
+    // Return the last object in the hierarchy:
+    return base;
+};
+Object.byString = function(o, s) {
+    s = s.replace(/\[(\w+)\]/g, '.$1'); // convert indexes to properties
+    s = s.replace(/^\./, '');           // strip a leading dot
+    var a = s.split('.');
+    for (var i = 0, n = a.length; i < n; ++i) {
+        var k = a[i];
+        if (k in o) {
+            o = o[k];
+        } else {
+            return;
+        }
+    }
+    return o;
+}
+
 
 Max.addHandler("interp", (dname) => {
 
@@ -35,11 +69,11 @@ Max.addHandler("interp", (dname) => {
 			for (var [key, value] of Object.entries(interpDict.preset.params)) {
 				Max.outlet("param", value.param, value.value);
 				var datakey = value.param.split(/[\/,\.,\(::\)]+/);
-				var datastring = "dataDict"
-				for (var l of datakey) {
-					datastring += "[\"" + l + "\"]";
-				}
-				eval(datastring + "= " + value.value);
+				
+				var temp = {};
+
+				createNestedObject(dataDict, datakey, value.value);
+
 
 			}
 			if (interpDict.preset.message != undefined) {
@@ -50,11 +84,14 @@ Max.addHandler("interp", (dname) => {
 
 			for (var [key, value] of Object.entries(interpDict.params)) {
 				var datakey = value.param.split(/[\/,\.,\(::\)]+/);
-				var datastring = "dataDict"
+				var datastring = datakey[0];
+				datakey.shift();
 				for (var l of datakey) {
-					datastring += "[\"" + l + "\"]";
+					datastring += "." + l;
 				}
-				interpDict.startVals[value.param] = eval(datastring);
+				
+				interpDict.startVals[value.param]  = Object.byString(dataDict, datastring);
+				if (typeof value.value == "string") value.value = value.value.split(" ").map(Number);
 				interpDict.endVals[value.param] = value.value;
 
 			}
@@ -121,14 +158,30 @@ function timerLoop() {
 			}
 
 			for (var [key, value] of Object.entries(d.params)) {
-
+				var thisVal = undefined;
 				if (value.function != undefined && value.function in EasingFunctions ){
 					e=EasingFunctions[interpDict.function](p);
 				}
 
+				if(typeof d.startVals[value.param] === "number" && !Array.isArray(d.startVals[value.param])){
+					thisVal = d.startVals[value.param] * (1 - e) + d.endVals[value.param] * e;
+					Max.outlet(["param", value.param, thisVal]);
+				}
 
-				var thisVal = d.startVals[value.param] * (1 - e) + d.endVals[value.param] * e;
-				Max.outlet(["param", value.param, thisVal]);
+				else if(Array.isArray(d.startVals[value.param])){
+					thisVal = [];
+					for (var i=0; i < d.startVals[value.param].length; i++){
+						thisVal[i] = Number(d.startVals[value.param][i]) * (1 - e) + Number(d.endVals[value.param][i]) * e;					
+					}
+					//Max.post(thisVal);
+					var outputArray = ["param", value.param];
+					for (var i=0 ; i< thisVal.length; i++){
+						outputArray.push(thisVal[i]);
+					}
+
+					Max.outlet(outputArray);
+
+					}
 
 			}
 

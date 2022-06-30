@@ -58,3 +58,8 @@ function prettyPrintPath(path) {
   }
   return str
 }
+
+socket.on("mode", (data) => {
+  editor.setMode(data);
+
+});
